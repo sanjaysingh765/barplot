@@ -48,7 +48,7 @@ ave
 
 
 #pdf(file = "tissue.pdf", width = 2, height = 2, family = "Times", pointsize = 16) # defaults to 7 x 7 inches
-#png(args[3], units="in", family="Times",  width=1.5, height=2, res=300) #pointsize is font size| increase image size to see the key
+png(args[3], units="in", family="Times",  width=1.5, height=2, res=300) #pointsize is font size| increase image size to see the key
 ###  Compare two independent groups (By default method = “wilcox.test” (non-parametric test). You can also specify method = “t.test” for a parametric t-test.)
 
 #Multiple pairwise tests against a reference group:
@@ -97,5 +97,5 @@ scale_y_continuous(expand=c(0,0), limits = c(0, as.numeric(args[4])))+
    #scale_x_discrete(labels= my.labels)
 
 
-#dev.off()
+dev.off()
 
