@@ -1,11 +1,11 @@
-theme_ms <- function(base_size=12, base_family="Helvetica") {
+theme_ms <- function(base_size=12, base_family="Arial") {
   library(grid)
   (theme(
     panel.grid.major = element_blank(),
     panel.grid.minor = element_blank(),
     panel.background = element_blank())  +
 theme(
-axis.text=element_text(size=4, color = "black",family="Times"),
+axis.text=element_text(size=4, color = "black",family="Arial"),
 axis.title=element_text(size=4,face="bold", color = "black"),
 plot.title = element_text(color="black", size=5, face="bold.italic",hjust = 0.5,margin=margin(b = 5, unit = "pt")))+
 theme(axis.text.x = element_text(angle = 360, hjust = 0.5, vjust = 1.2,color = "black" ))+
